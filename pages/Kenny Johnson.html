@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Kenny Johnson</title>
+</head>
+<body class="kennys__page">
+    <section class="character__home-container">
+      <header class="header">
+        <a href="" class="logo">The Chosen Ones</a>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="bx bx-menu" id="menu__icon"></i>
+          <i class="bx bx-x" id="close__icon"></i>
+        </label>
+
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="./Character.html">Character</a>
+          <a href="./Promotional.html">Promotional</a>
+        </nav>
+      </header>
+    </section>
+    <section class="character__video-container">
+        <video src="../assets/Kenny's Video.mov" width="100%" height="100%" controls></video>
+    </section>
+    <div class="full__img" id="fullImgBox">
+        <img src="../assets/Kenny Full Power.png" id="fullImg" alt="">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <section>
+    <div class="gallery__container">
+        <img src="../assets/Kenny Johnson.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny's Power.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny CloseUp.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny Fan Art.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny Full Power.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny Look Camera.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny One Arm Power.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny Power Arm.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Kenny Side Shot.png" onclick="openFullImg(this.src)" alt="">
+    </div>
+    
+
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
