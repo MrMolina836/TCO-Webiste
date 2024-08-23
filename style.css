@@ -392,49 +392,48 @@
 }
 
 
-
-.footer__link {
-    color: white;
-}
-
-.footer__link i {
-    font-size: 1.6rem;
-}
-
-.footer__social-media {
+.footer__container{
+    height: 60vh;
+    width: 100%;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
-
-.footer__social-media h3 {
-    margin-bottom: 1.2rem;
+.footer__logo{
+    width: 160px;
+    height: 160px;
+}
+.footer__logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.footer__contact-us{
+    color: white;
+    text-align: center;
+}
+.footer__contact-us p{
+    font-size: 20px;
+}
+.footer__contact-us h3{
+    margin-bottom: .7rem;
     font-size: 25px;
 }
-
-.social__media-links {
+.footer__social-media{
+    margin-bottom: .5rem;
+}
+.social__media-links{
     display: flex;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
+    gap: 1rem;
 }
-
-.footer__contact {
-    display: flex;
-    flex-direction: column;
+.footer__link{
+    color: white;
 }
-
-.footer__contact-icon {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1rem;
-}
-
-.F-logo {
-    margin: 2rem 0 .6rem 0;
-}
-
-.fa-phone {
-    transform: rotate(90deg);
+.footer__link i{
+    font-size: 1.5rem;
 }
 
 /*                  Tablets              */
