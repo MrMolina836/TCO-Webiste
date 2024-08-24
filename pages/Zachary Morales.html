@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b59d8d41a4.js" crossorigin="anonymous"></script>
+    <title>Zachary Morales</title>
+</head>
+<body class="mark__grover">
+    <section class="character__home-container">
+      <header class="header">
+        <a href="" class="logo">The Chosen Ones</a>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="icons">
+          <i class="bx bx-menu" id="menu__icon"></i>
+          <i class="bx bx-x" id="close__icon"></i>
+        </label>
+
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="./Character.html">Character</a>
+          <a href="./Promotional.html">Promotional</a>
+        </nav>
+      </header>
+    </section>
+    <section class="character__video-container">
+        <video src="../assets/Zachary Teleport Stills.mov" width="100%" height="100%" controls></video>
+    </section>
+    <div class="full__img" id="fullImgBox">
+        <img src="../assets/Zachary Profile.png" id="fullImg" alt="">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <section>
+    <div class="gallery__container">
+        <img src="../assets/Zachary Power Early.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Zachary FanArt.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Zachary FanArt Close.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Zachary Artwork 2.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Zachary Snap.png" onclick="openFullImg(this.src)" alt="">
+        <img src="../assets/Hand - Zach.png" onclick="openFullImg(this.src)" alt="">
+    </div>
+    
+    <footer class="footer__container">
+    <div class="footer__logo">
+        <img src="../assets/TCO Logo.png" alt="">
+    </div>
+
+    <div class="footer__contact-us">
+        <div class="contact__info">
+            <h3>Contact Us</h3>
+            <p>TeamChosenOnesTV@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer__social-media">
+                <div class="social__media-links">
+                    <a href="https://www.instagram.com/thechosenones_tv?igsh=MXhtOGRmejVoNXU2dA%3D%3D&utm_source=qr 
+                    (https://www.instagram.com/thechosenones_tv?igsh=MXhtOGRmejVoNXU2dA%3D%3D&utm_source=qr)" 
+                    class="footer__link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61558968007022&mibextid=LQQJ4d 
+                    (https://www.facebook.com/profile.php?id=61558968007022&mibextid=LQQJ4d)" 
+                    class="footer__link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/Kp3X6YKhQz8jR6vy/?mibextid=KR3qBd 
+                    (https://www.facebook.com/share/Kp3X6YKhQz8jR6vy/?mibextid=KR3qBd)"
+                    class="footer__link" target="_blank">
+                        <i class="fa-solid fa-user-group"></i>
+                    </a>
+
+                </div>
+            </div>
+</footer>
+
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
