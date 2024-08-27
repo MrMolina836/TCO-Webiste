@@ -552,6 +552,10 @@
         align-items: center;
         justify-content: center;
     }
+    .promotional__img-container{
+        height: auto;
+        padding: 0 2rem;
+    }
     .promotional__text-container{
         width: 90%;
         margin-top: 0;
