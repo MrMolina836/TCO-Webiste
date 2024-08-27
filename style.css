@@ -467,7 +467,7 @@
         padding: 10vh 1rem;
     }
     .promotional__breakdown{
-        padding: 5rem 3rem;
+        padding: 5rem 0.2rem;
     }
     .promotional__detail-breakdown{
         flex-direction: column;
@@ -508,7 +508,7 @@
     }
 
     .promotional__breakdown {
-        padding: 5rem 1rem;
+        padding: 5rem .5rem;
     }
 
     .breakdown__title {
