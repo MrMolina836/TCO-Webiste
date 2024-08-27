@@ -466,7 +466,20 @@
     .character__video-container{
         padding: 10vh 1rem;
     }
+    .promotional__breakdown{
+        padding: 5rem 3rem;
+    }
+    .promotional__detail-breakdown{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .promotional__text-container{
+        width: 90%;
+    }
 }
+
+
 
 @media (max-width: 450px) {
     .homeText {
