@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6f75fb16b56d2ba4743d8b971/a85d53b9317575f9444c37e98.js");</script>
     <script src="https://kit.fontawesome.com/b59d8d41a4.js" crossorigin="anonymous"></script>
     <title>The Chosen Ones Website</title>
 </head>
 <body>
+<div class="overlay"></div>
 <div class="popup">
-    <button id="close">&times;</button>
+    <button class="popup__btn" id="close">&times;</button>
     <h2>Follow our campaign by email</h2>
-    <form action="">
+    <form action="https://api.web3forms.com/submit" id="form" method="POST">
+        <input type="hidden" name="access_key" value="9d559a79-0714-458b-a3aa-eba14f85b59c">
+        <input type="hidden" name="subject" value="New Email!!">
         <input type="email" name="Email" placeholder="Enter Email" class="contact__input" required>
+        <div class="form__btn-container">
+            <button type="submit" class="btn">Subscribe</button>
+        </div>
     </form>
+    
     <p class="popup__text">
         We will send weekly emails regarding our crowdfunding campaign and other updates. Thank you for your support!
     </p>
