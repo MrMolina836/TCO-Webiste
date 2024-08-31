@@ -507,6 +507,9 @@ top: 10px;
   color: white;
   text-align: center;
 }
+.contact__info a{
+  color: white;
+}
 .footer__contact-us p {
   font-size: 20px;
 }
