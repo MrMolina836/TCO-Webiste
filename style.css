@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.flex{
+  display: flex;
+}
 
 .overlay {
   position: fixed;
@@ -20,7 +23,7 @@
 .popup {
   background-color: #ffff;
   width: 80%;
-  padding: 30px 40px;
+  padding: 40px 20px;
   position: fixed;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -37,8 +40,8 @@ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   background-color: transparent;
   font-size: 30px;
   position: absolute;
-top: 10px;
-    right: 30px;
+  top: 10px;
+  right: 30px;
   color: #c5c5c5;
   border: none;
   outline: none;
@@ -46,6 +49,7 @@ top: 10px;
 }
 .popup h2 {
   text-align: center;
+  font-size: 30px;
 }
 .popup p {
   font-size: 14px;
@@ -53,6 +57,23 @@ top: 10px;
   margin: 20px 0;
   line-height: 1.2;
   text-align: center;
+}
+
+.date__container {
+  flex-wrap: wrap;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__input-name {
+  width: 10.5rem;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 .contact__input {
   width: 100%;
@@ -387,7 +408,7 @@ top: 10px;
 }
 
 .fundraiser__detail-container .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke-dashoffset: calc(440 - (440 * 0) / 100);
   stroke: #03a9f4;
 }
 
@@ -619,7 +640,7 @@ top: 10px;
   }
 
   .breakdown__title {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   .promotional__detail-breakdown {
@@ -640,8 +661,11 @@ top: 10px;
 
 @media (max-width: 450px) {
   .homeText {
-    bottom: -180px;
+    bottom: -250px;
     padding: 0 10px 10px 10px;
+  }
+  .homeText{
+    bottom: -260px;
   }
 
   .video__container {
@@ -658,8 +682,39 @@ top: 10px;
     justify-content: center;
     align-items: center;
   }
+  .date__container{
+    gap: 0;
+    margin-top: .6rem;
+  }
+  .contact__input-name{
+    margin-top: .5rem;
+  }
 }
 
+@media (max-width: 576px){
+  .promotional__breakdown {
+      padding: 5rem 1rem;
+    }
+    .breakdown__title{
+      font-size: 26px;
+    }
+  
+    .promotional__detail-breakdown {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .promotional__img-container {
+      height: auto;
+      padding: 0 4rem;
+    }
+  
+    .promotional__text-container {
+      width: 90%;
+      margin-top: 0;
+    }
+}
 
 @media screen and (min-width: 576px) and (max-width: 1024px) {
   .home__container {
